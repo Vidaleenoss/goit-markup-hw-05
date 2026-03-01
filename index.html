@@ -63,7 +63,9 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn">Order Service</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!--features`-->
@@ -489,7 +491,112 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-wrapper-subscribe">
+          <p class="footer-form-title">Subscribe</p>
+          <form class="footer-form" name="user-subscribe">
+            <label for="" class="footer-lable">
+              <input
+                class="footer-form-input"
+                type="email"
+                name="footer-email"
+                id="footer-email"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button class="btn btn-accent" type="submit">
+              Subscribe
+              <svg class="footer-subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-Telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button
+          class="modal-btn"
+          type="button"
+          aria-label="close-modal-btn"
+          data-modal-close
+        >
+          <svg class="modal-bnt-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-slogan">
+          Leave your contacts and we will call you back
+        </p>
+
+        <form class="feadback-form" name="feadback">
+          <div class="feadback-wrpapper">
+            <label class="modal-label" for="user-name">Name</label>
+            <div class="feadback-field">
+              <input type="text" id="user-name" class="modal-input" />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="feadback-wrapper">
+            <label class="modal-label" for="user-phone">Phone</label>
+            <div class="feadback-field">
+              <input type="tel" id="user-phone" class="modal-input" />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="feadback-wrapper">
+            <label class="modal-label" for="user-email">Email</label>
+            <div class="feadback-field">
+              <input type="email" id="user-email" class="modal-input" />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="feadback-wrapper">
+            <label class="modal-label" for="user-comment">Comment</label>
+            <textarea
+              class="feadback-comment"
+              name="user-comment"
+              id="user-comment"
+              rows="8"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <label class="feadback-agreement">
+            <input
+              class="feadback-checkbox visually-hidden"
+              type="checkbox"
+              name="user-agreement"
+              id="user-agreement"
+              value="true"
+              checked
+            />
+            <span class="feadback-toggler">
+              <svg class="feadback-toggler-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-Vector"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a class="feadback-link" href="#">Privacy Policy</a>
+          </label>
+
+          <button class="btn btn-modal" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
