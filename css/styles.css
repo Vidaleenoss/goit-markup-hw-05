@@ -605,13 +605,13 @@ width: 24px;
     background: #e7e9fc;
     cursor: pointer;
     font-size: 14px;
-    fill: #2E2F42;
-    color: #2E2F42;
+    fill: #2e2f42;
+    color: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn:hover,
 .modal-btn:focus {
-    background-color: #4d5ae5;
+    background-color: #404bbf;
     fill: #fff;
     color: #fff;
 }
@@ -636,7 +636,7 @@ width: 24px;
 /* form */
 .feadback-form {}
 
-.feadback-wrpapper {
+.feadback-wrapper {
     margin-bottom: 8px;
 }
 
@@ -716,13 +716,14 @@ width: 24px;
     font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 12px;
-    line-height: 1.16667;
+    line-height: 1.33;
         letter-spacing: 0.04em;
         color: #8e8f99;
 }
 
 .feadback-toggler {
     display: inline-flex;
+    margin-right: 8px;
     width: 16px;
         height: 16px;
         border: 1px solid rgba(46, 47, 66, 0.4);
